@@ -1,5 +1,7 @@
-<h2><%= @task.title %></h2>
-<p><%= @task.details %></p>
+<div class="container">
+<h1 class="mt-4 mb-4"><%= @task.title %></h1>
+<p class="card col-4 py-4 px-4"><%= @task.details %></p>
 <p><%= @task.completed? %></p>
 <p><%= link_to "Edit this task", edit_task_path(@task) %></p>
 <p><%= link_to "Back to tasks", tasks_path %></p>
+</div>
